@@ -22,45 +22,129 @@
   }
 }
 
-.about-content-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.about-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-  }
-}
-
 .about-title {
+  text-align: center;
+
   @include media(desktop) {
   }
 }
 
 .about-subtitle {
   @include media(desktop) {
-    max-width: 842px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+  }
+}
+
+.about-text-wrapper {
+  @include media(desktop) {
+    max-width: 475px;
+    margin-top: 18px;
+    order: 2;
   }
 }
 
 .about-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-  color: #c7c7c7;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 16px;
-    max-width: 406px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 18px;
+  }
+}
+
+.about-bottom-text {
+  margin-top: 8px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-text-bottom-wrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-bottom-wrapper {
+  width: 100%;
+  max-width: 163px;
+
+  @include media(desktop) {
+    max-width: 229px;
+  }
+}
+
+.about-bottom-wrapper-number {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #74d4df;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.about-bottom-wrapper-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #dfdfdf;
+
+  @include media(desktop) {
+  }
+}
+
+.about-img1 {
+  margin-left: auto;
+
+  @include media(desktop) {
+  }
+}
+
+.about-top-img-wrapper {
+  @include media(desktop) {
+    order: 1;
+  }
+}
+
+.about-img2 {
+  @include media(desktop) {
+  }
+}
+
+.about-bottom-img-wrapper {
+  @include media(desktop) {
+    order: 3;
+  }
+}
+
+.about-img3 {
+  @include media(desktop) {
   }
 }

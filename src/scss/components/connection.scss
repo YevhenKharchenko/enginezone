@@ -1,0 +1,51 @@
+.connection-section {
+  @include media(desktop) {
+  }
+}
+
+.connection-bg-wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/connection/connection-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 147px;
+    padding-bottom: 147px;
+    max-width: 1440px;
+    background-image: url(../img/connection/connection-bg-desk.jpg);
+  }
+}
+
+.connection-container {
+  @include media(desktop) {
+    padding: 0;
+  }
+}
+
+.connection-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.connection-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  background: linear-gradient(90deg, #74d4df 0%, #fff 50%, #74d4df 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+    font-size: 52px;
+  }
+}

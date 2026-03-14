@@ -1,44 +1,45 @@
-.interaction-visual-bg-wrapper {
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/interaction/interaction-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
-
-  @include media(desktop) {
-    max-width: 1440px;
-    background-image: url(../img/interaction/interaction-bg-desk.jpg);
-  }
-}
-
 .interaction-section {
   @include media(desktop) {
   }
 }
 
 .interaction-bg-wrapper {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 104px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 104px;
-    padding-bottom: 104px;
     max-width: 1440px;
   }
 }
 
 .interaction-container {
+  padding: 0;
+
   @include media(desktop) {
   }
 }
 
 .interaction-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
   @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 112px;
+  }
+}
+
+.interaction-text-wrapper {
+  padding: 0 16px;
+
+  @include media(desktop) {
+    padding: 0;
+    max-width: 624px;
   }
 }
 
@@ -48,54 +49,69 @@
 }
 
 .interaction-subtitle {
+  text-align: left;
+  margin-bottom: 24px;
+
   @include media(desktop) {
-    max-width: 624px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
+  }
+}
+
+.interaction-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #dfdfdf;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.interaction-list-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #dfdfdf;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 18px;
   }
 }
 
 .interaction-list {
+  list-style-type: disc;
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  color: #74d4df;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    gap: 32px;
   }
 }
 
 .interaction-list-item {
-  padding: 24px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 343px;
-
-  @include media(desktop) {
-    max-width: 248px;
-  }
-}
-
-.interaction-icon {
   @include media(desktop) {
   }
 }
 
 .interaction-item-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.4;
-  text-align: center;
-  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #74d4df;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 18px;
+  }
+}
+
+.interaction-img {
+  @include media(desktop) {
+    min-width: 640px;
   }
 }

@@ -2,47 +2,53 @@
   <div class="interaction-bg-wrapper">
     <div class="container interaction-container">
       <div class="interaction-content-wrapper">
-        <h2 class="section-title interaction-title">Interaction Rules</h2>
-        <p class="section-subtitle interaction-subtitle">
-          You get good at it by learning how the
-          <span class="section-subtitle-span">
-            game reacts to what you do.
-          </span>
-        </p>
-        <ul class="interaction-list">
-          <li class="interaction-list-item">
-            <svg class="interaction-icon" width="124" height="124">
-              <use href="./img/sprite.svg#icon-interaction1"></use>
-            </svg>
-            <p class="interaction-item-text">
-              One input controls motion bias, not exact direction
-            </p>
-          </li>
-          <li class="interaction-list-item">
-            <svg class="interaction-icon" width="124" height="124">
-              <use href="./img/sprite.svg#icon-interaction2"></use>
-            </svg>
-            <p class="interaction-item-text">
-              Acceleration matters more than position
-            </p>
-          </li>
-          <li class="interaction-list-item">
-            <svg class="interaction-icon" width="124" height="124">
-              <use href="./img/sprite.svg#icon-interaction3"></use>
-            </svg>
-            <p class="interaction-item-text">
-              Collisions can reshape the environment
-            </p>
-          </li>
-          <li class="interaction-list-item">
-            <svg class="interaction-icon" width="124" height="124">
-              <use href="./img/sprite.svg#icon-interaction4"></use>
-            </svg>
-            <p class="interaction-item-text">
-              Repeated movement patterns unlock new behaviors
-            </p>
-          </li>
-        </ul>
+        <div class="interaction-text-wrapper">
+          <h2 class="section-title interaction-title">[Player Interaction]</h2>
+          <p class="section-subtitle interaction-subtitle">
+            Manage the Network
+          </p>
+          <p class="interaction-text">
+            In Signal Foundry, players don’t just solve tasks — they build and
+            manage a living network. It’s important to watch how energy flows,
+            identify weak points, and optimize the system.
+          </p>
+          <p class="interaction-list-text">Players can:</p>
+          <ul class="interaction-list">
+            <li class="interaction-list-item">
+              <p class="interaction-item-text">
+                connect and reroute signals to ensure energy flows correctly,
+              </p>
+            </li>
+            <li class="interaction-list-item">
+              <p class="interaction-item-text">
+                balance loads between nodes and prevent overloads,
+              </p>
+            </li>
+            <li class="interaction-list-item">
+              <p class="interaction-item-text">
+                use stabilizers to smooth out signal flow.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="./img/interaction/interaction-img-desk.png"
+            media="(min-width: 1440px)"
+            width="640"
+            height="530" />
+          <source
+            srcset="./img/interaction/interaction-img-mob.png"
+            width="375"
+            height="530" />
+          <img
+            class="interaction-img"
+            src="./img/interaction/interaction-img-mob.png"
+            alt="Screenshot of the game"
+            width="375"
+            height="530"
+            loading="lazy"
+        /></picture>
       </div>
     </div>
   </div>

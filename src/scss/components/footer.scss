@@ -1,5 +1,5 @@
 .footer {
-  background: #11091c;
+  background: #00070c;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -35,10 +35,10 @@
 }
 
 .footer-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.8;
   text-align: center;
   color: #fff;
   transition: color 0.3s ease-in-out;
@@ -53,14 +53,14 @@
 }
 
 .footer-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.8;
   text-align: center;
-  color: #fff;
+  color: #dfdfdf;
 
   @include media(desktop) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }

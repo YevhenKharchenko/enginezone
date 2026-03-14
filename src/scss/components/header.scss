@@ -1,19 +1,33 @@
 .header {
-  backdrop-filter: blur(16px);
-  background: rgba(0, 0, 0, 0.15);
-  padding: 6px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
+  }
+}
+
+.header-bg-wrapper {
+  padding: 6px 0;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
     padding: 11px 0;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
   }
 }
 
 .header-container {
   @include media(desktop) {
+    padding: 0 80px;
   }
 }
 
@@ -41,20 +55,20 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
   }
 }
 
 .nav-list-link {
   padding: 8px 12px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.16;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
-  color: #c7c7c7;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +78,7 @@
   &:focus,
   &:active,
   &.active {
-    color: #ff3503;
+    color: #74d4df;
   }
 }
 
@@ -92,4 +106,8 @@
   @include media(desktop) {
     display: none;
   }
+}
+
+.menu-is-open {
+  background: none;
 }

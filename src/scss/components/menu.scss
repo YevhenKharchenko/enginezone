@@ -1,5 +1,5 @@
 .context-menu {
-  background: #070a0d;
+  background: #00070c;
   display: none;
   width: 100%;
   height: 100%;
@@ -13,42 +13,39 @@
 }
 
 .context-container {
-  padding: 0 40px;
+  padding: 0 32px;
 }
 
 .context-nav {
   display: flex;
   align-items: center;
-  margin-top: 92px;
+  margin-top: 84px;
 }
 
 .context-nav-list {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 24px;
+  gap: 16px;
 }
 
 .context-list-link {
-  border-bottom: 1px solid transparent;
-  padding: 8px 0;
-  font-family: 'Cormorant Garamond', sans-serif;
-  font-weight: 700;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.16;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
-  color: #bbb;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition:
-    color 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 
   &:active {
-    color: #bba27a;
-    border-color: #bba27a;
+    color: #74d4df;
   }
 }
 

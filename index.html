@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enginezone</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://enginezone.pro" />
+    <link rel="icon" type="image/png" href="/enginezone/favicon.png" />
+    
+    <script type="module" crossorigin src="/enginezone/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/enginezone/assets/header-e0b992dd.js">
+    <link rel="stylesheet" href="/enginezone/assets/header-da730074.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-bg-wrapper">
+    <div class="container header-container">
+      <nav class="nav">
+        <a class="header-logo-link" href="./">
+          <img
+            class="header-logo-img"
+            src="data:image/png;base64,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"
+            alt="Logo"
+            width="44"
+            height="40"
+        /></a>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#about">Overview</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#system">The System</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#interaction"
+              >Player Interaction</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#gameplay"
+              >Core Mechanics</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#gallery"
+              >Visual Language</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="nav-btn" type="button" aria-label="Open mobile menu">
+          <svg class="menu-icon" width="40" height="40">
+            <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="close-btn" type="button" aria-label="Close mobile menu">
+          <svg class="close-icon" width="40" height="40">
+            <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-close"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <div class="container context-container">
+    <nav class="context-nav">
+      <ul class="context-nav-list">
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#about">Overview</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#system">The System</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#interaction"
+            >Player Interaction</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gameplay"
+            >Core Mechanics</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gallery"
+            >Visual Language</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <h1 class="hero-main-title hero-top-main-title">Every signal</h1>
+        <h1 class="hero-main-title hero-bottom-main-title">tells a story</h1>
+        <p class="hero-subtitle">
+          Design systems that balance flow, stability, and control.
+        </p>
+      </div>
+      <div class="hero-side-text-wrapper">
+        <p class="hero-side-text">Signals</p>
+        <p class="hero-side-text">Networks</p>
+        <p class="hero-side-text">Systems</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <h2 class="section-title about-title">[What the Game Is]</h2>
+      <p class="section-subtitle about-subtitle">
+        Signal Foundry places players inside a living signal network.
+      </p>
+      <div class="about-content-wrapper">
+        <div class="about-text-wrapper">
+          <p class="about-text">
+            Your job isn't to rush through solutions, but to actually watch how
+            energy flows, figure out where it breaks, and see how systems react
+            when you change things.
+          </p>
+          <p class="about-text about-bottom-text">
+            You get better by actually understanding how things work together,
+            not just randomly trying stuff until something works.
+          </p>
+          <div class="about-text-bottom-wrapper">
+            <div class="about-bottom-wrapper">
+              <p class="about-bottom-wrapper-number">150+</p>
+              <p class="about-bottom-wrapper-text">Modular Nodes</p>
+            </div>
+            <div class="about-bottom-wrapper">
+              <p class="about-bottom-wrapper-number">3,000+</p>
+              <p class="about-bottom-wrapper-text">Connection Possibilities</p>
+            </div>
+          </div>
+          <img
+            class="about-img1"
+            src="/enginezone/assets/about-img1-mob-472afd22.png"
+            alt="Screenshot of the game"
+            width="171"
+            height="208"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-top-img-wrapper">
+          <picture>
+            <source
+              srcset="/enginezone/assets/about-img2-desk-0501ed10.png "
+              media="(min-width: 1440px)"
+              width="416"
+              height="560" />
+            <source
+              srcset="/enginezone/assets/about-img2-mob-c0e09ae8.png "
+              width="343"
+              height="460" />
+            <img
+              class="about-img2"
+              src="/enginezone/assets/about-img2-mob-c0e09ae8.png"
+              alt="Screenshot of the game"
+              width="343"
+              height="460"
+              loading="lazy"
+          /></picture>
+        </div>
+        <div class="about-bottom-img-wrapper">
+          <picture>
+            <source
+              srcset="/enginezone/assets/about-img3-desk-7ef65397.png "
+              media="(min-width: 1440px)"
+              width="293"
+              height="343" />
+            <source
+              srcset="/enginezone/assets/about-img3-mob-3170da35.png "
+              width="343"
+              height="447" />
+            <img
+              class="about-img3"
+              src="/enginezone/assets/about-img3-mob-3170da35.png"
+              alt="Screenshot of the game"
+              width="343"
+              height="447"
+              loading="lazy"
+          /></picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section connection-section" id="connection">
+  <div class="connection-bg-wrapper">
+    <div class="container connection-container">
+      <div class="connection-content-wrapper">
+        <p class="connection-text">
+          EVERY_CONNECTION_MATTERS_EVERY_CONNECTION_MATTERS
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section system-section" id="system">
+  <div class="system-bg-wrapper">
+    <div class="container system-container">
+      <div class="system-content-wrapper">
+        <h2 class="section-title system-title">[The System]</h2>
+        <p class="section-subtitle system-subtitle">
+          Each element affects how energy moves through the network.
+        </p>
+        <p class="system-text">
+          Small changes can ripple across the entire system. Everything's
+          connected, so when you change one thing, it affects everything else.
+        </p>
+        <ul class="system-list">
+          <li class="system-list-item">
+            <img
+              class="system-img1"
+              src="/enginezone/assets/system-img1-ade5874b.png"
+              alt="Screenshot of the game"
+              width="304"
+              height="156"
+              loading="lazy"
+            />
+          </li>
+          <li class="system-list-item">
+            <img
+              class="system-img1"
+              src="/enginezone/assets/system-img2-1d640381.png"
+              alt="Screenshot of the game"
+              width="304"
+              height="156"
+              loading="lazy"
+            />
+          </li>
+          <li class="system-list-item">
+            <img
+              class="system-img1"
+              src="/enginezone/assets/system-img3-16401d9b.png"
+              alt="Screenshot of the game"
+              width="304"
+              height="156"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section interaction-section" id="interaction">
+  <div class="interaction-bg-wrapper">
+    <div class="container interaction-container">
+      <div class="interaction-content-wrapper">
+        <div class="interaction-text-wrapper">
+          <h2 class="section-title interaction-title">[Player Interaction]</h2>
+          <p class="section-subtitle interaction-subtitle">
+            Manage the Network
+          </p>
+          <p class="interaction-text">
+            In Signal Foundry, players don’t just solve tasks — they build and
+            manage a living network. It’s important to watch how energy flows,
+            identify weak points, and optimize the system.
+          </p>
+          <p class="interaction-list-text">Players can:</p>
+          <ul class="interaction-list">
+            <li class="interaction-list-item">
+              <p class="interaction-item-text">
+                connect and reroute signals to ensure energy flows correctly,
+              </p>
+            </li>
+            <li class="interaction-list-item">
+              <p class="interaction-item-text">
+                balance loads between nodes and prevent overloads,
+              </p>
+            </li>
+            <li class="interaction-list-item">
+              <p class="interaction-item-text">
+                use stabilizers to smooth out signal flow.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/enginezone/assets/interaction-img-desk-31234e99.png "
+            media="(min-width: 1440px)"
+            width="640"
+            height="530" />
+          <source
+            srcset="/enginezone/assets/interaction-img-mob-f86940eb.png "
+            width="375"
+            height="530" />
+          <img
+            class="interaction-img"
+            src="/enginezone/assets/interaction-img-mob-f86940eb.png"
+            alt="Screenshot of the game"
+            width="375"
+            height="530"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section gameplay-section" id="gameplay">
+  <div class="gameplay-bg-wrapper">
+    <div class="container gameplay-container">
+      <div class="gameplay-content-wrapper">
+        <div class="gameplay-text-wrapper">
+          <h2 class="section-title gameplay-title">[Core Mechanics]</h2>
+          <p class="section-subtitle gameplay-subtitle">
+            Plan Like an Engineer
+          </p>
+          <ul class="gameplay-list">
+            <li class="gameplay-list-item">
+              <div class="gameplay-item-circle-wrapper">
+                <div class="gameplay-item-circle"></div>
+              </div>
+              <div class="gameplay-item-text-wrapper">
+                <p class="gameplay-item-title">Real-Time Feedback</p>
+                <p class="gameplay-item-text">
+                  See instant results as the system reacts to every change.
+                </p>
+              </div>
+            </li>
+            <li class="gameplay-list-item">
+              <div class="gameplay-item-circle-wrapper">
+                <div class="gameplay-item-circle"></div>
+              </div>
+              <div class="gameplay-item-text-wrapper">
+                <p class="gameplay-item-title">Interconnected Systems</p>
+                <p class="gameplay-item-text">
+                  Small adjustments can affect the whole network.
+                </p>
+              </div>
+            </li>
+            <li class="gameplay-list-item">
+              <div class="gameplay-item-circle-wrapper">
+                <div class="gameplay-item-circle"></div>
+              </div>
+              <div class="gameplay-item-text-wrapper">
+                <p class="gameplay-item-title">Plan, Don’t Rush</p>
+                <p class="gameplay-item-text">
+                  No timers — success comes from planning and foresight.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/enginezone/assets/gameplay-img-desk-a5cf1421.png "
+            media="(min-width: 1440px)"
+            width="640"
+            height="530" />
+          <source
+            srcset="/enginezone/assets/gameplay-img-mob-262a824c.png "
+            width="375"
+            height="530" />
+          <img
+            class="gameplay-img"
+            src="/enginezone/assets/gameplay-img-mob-262a824c.png"
+            alt="Screenshot of the game"
+            width="375"
+            height="530"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery-section section" id="gallery">
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <div class="gallery-content-wrapper">
+        <h2 class="section-title gallery-title">[Visual Language]</h2>
+        <p class="section-subtitle gallery-subtitle">
+          We focused on making things clear and easy
+        </p>
+        <ul class="gallery-list">
+          <li class="gallery-slide">
+            <picture>
+              <source
+                srcset="/enginezone/assets/gallery-img1-desk-dee6496a.png "
+                media="(min-width: 1440px)"
+                width="713"
+                height="760" />
+              <source
+                srcset="/enginezone/assets/gallery-img1-mob-494f7a8f.png "
+                width="343"
+                height="418" />
+              <img
+                class="gallery-img"
+                src="/enginezone/assets/gallery-img1-mob-494f7a8f.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="418"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="gallery-slide">
+            <picture>
+              <source
+                srcset="/enginezone/assets/gallery-img2-desk-ccb48024.png "
+                media="(min-width: 1440px)"
+                width="535"
+                height="348" />
+              <source
+                srcset="/enginezone/assets/gallery-img2-mob-11f99b35.png "
+                width="343"
+                height="368" />
+              <img
+                class="gallery-img"
+                src="/enginezone/assets/gallery-img2-mob-11f99b35.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="368"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="gallery-slide">
+            <picture>
+              <source
+                srcset="/enginezone/assets/gallery-img3-desk-69cd1825.png "
+                media="(min-width: 1440px)"
+                width="535"
+                height="348" />
+              <source
+                srcset="/enginezone/assets/gallery-img3-mob-cbd49d13.png "
+                width="343"
+                height="368" />
+              <img
+                class="gallery-img"
+                src="/enginezone/assets/gallery-img3-mob-cbd49d13.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="368"
+                loading="lazy"
+            /></picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="faq-bg-wrapper">
+    <div class="container faq-container">
+      <div class="faq-content-wrapper">
+        <div class="faq-text-wrapper">
+          <h2 class="section-title faq-title">[FAQ]</h2>
+          <p class="section-subtitle faq-subtitle">
+            Curious? We’ve Got You Covered
+          </p>
+          <ul class="faq-list">
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text"
+                  >Is Signal Foundry a puzzle game?</span
+                >
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-arrow-down"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                It’s more about system design than fixed puzzles.
+              </p>
+            </li>
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text">Are there time limits?</span>
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-arrow-down"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                No. The game encourages careful planning.
+              </p>
+            </li>
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text">Do systems change over time?</span>
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-arrow-down"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                Yes. Signal behavior evolves as networks grow.
+              </p>
+            </li>
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text"
+                  >Can there be multiple solutions?</span
+                >
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-arrow-down"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                Absolutely. Efficiency depends on design choices.
+              </p>
+            </li>
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text"
+                  >Is this game suitable for casual players?</span
+                >
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-arrow-down"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                Yeah, anyone can play it, but you'll really enjoy it if you like
+                thinking through problems systematically.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/enginezone/assets/faq-img-desk-7925d1ab.png "
+            media="(min-width: 1440px)"
+            width="563"
+            height="550" />
+          <source srcset="/enginezone/assets/faq-img-mob-a1f40436.png " width="375" height="425" />
+          <img
+            class="faq-img"
+            src="/enginezone/assets/faq-img-mob-a1f40436.png"
+            alt="Screenshot of the game"
+            width="375"
+            height="425"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="contact-bg-wrapper">
+    <div class="container contact-container">
+      <div class="contact-content-wrapper">
+        <div class="contact-text-wrapper">
+          <h2 class="section-title contact-title">[Contact]</h2>
+          <p class="section-subtitle contact-subtitle">Support and inquiries</p>
+          <a href="mailto:info@enginezone.pro" class="contact-link">
+            <span class="contact-btn-span">info@enginezone.pro</span>
+            <svg class="arrow-icon" width="24" height="24">
+              <use href="/enginezone/assets/sprite-dc08d3bf.svg#icon-email"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2026 — All rights reserved. enginezone.pro</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to enhance your experience while using our website. By
+      continuing to use this site, you consent to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-accept-btn" id="cookie-accept">Accept</button>
+      <button class="cookie-decline-btn" id="cookie-decline">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>

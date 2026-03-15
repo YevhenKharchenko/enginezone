@@ -16,6 +16,8 @@
 }
 
 .faq-container {
+  padding: 0;
+
   @include media(desktop) {
   }
 }
@@ -28,19 +30,17 @@
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
     gap: 64px;
   }
 }
 
 .faq-text-wrapper {
-  background: #f33c74;
-  border-radius: 40px;
-  padding: 40px 16px;
+  padding: 0 16px;
 
   @include media(desktop) {
-    padding: 40px;
+    padding: 0;
     max-width: 749px;
   }
 }
@@ -51,9 +51,12 @@
 }
 
 .faq-subtitle {
-  margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 24px;
 
   @include media(desktop) {
+    max-width: max-content;
+    margin-left: 0;
   }
 }
 
@@ -68,20 +71,19 @@
 }
 
 .faq-list-item {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px 16px;
+  border: 1px solid #74d4df;
+  padding: 19px 15px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  max-width: 311px;
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 669px;
+    max-width: 749px;
   }
 }
 
@@ -95,11 +97,11 @@
 }
 
 .faq-btn-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.4;
-  color: #ff3503;
+  line-height: 1.8;
+  color: #fff;
   text-align: left;
 
   @include media(desktop) {
@@ -126,20 +128,20 @@
 }
 
 .faq-bottom-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #11091c;
-  max-width: 255px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #dfdfdf;
+  max-width: 287px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 
   @include media(desktop) {
-    font-size: 16px;
-    max-width: 613px;
+    font-size: 18px;
+    max-width: 693px;
   }
 }
 
@@ -153,7 +155,7 @@
 }
 
 .faq-list-item.faq-open .faq-toggle-symbol {
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 
 .faq-list-item.faq-open {
@@ -163,10 +165,7 @@
 }
 
 .faq-img {
-  box-shadow: 0 4px 32px 0 rgba(243, 60, 116, 0.6);
-  border-radius: 40px;
-
   @include media(desktop) {
-    min-width: 467px;
+    min-width: 563px;
   }
 }
